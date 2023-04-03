@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO APP-CRUD</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <article class="app">
+        <section id="todoApp">
+            <div class="todo-app">
+                <h2 style="text-align: center;">TODO</h2>
+                <div id="add-todo">
+                    <p>Add todo</p>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <h3>Tasks</h3>
+      
+    
+                <div class="todo-container" id="todoContainer">
+                    <!-- <div class="todo" id="todo">
+                        <div class="todo-name">todo1</div>
+                        
+                        <div class="todo-description" max = "40">hkjsdghk</div>
+                        <div class="todo-date">29/04/2023</div>
+                        <div class="options">
+                            <i onclick="editTask(this)" class="fa-regular fa-pen-to-square"></i>
+                            <i onclick="deleteTask(this)" class="fa-solid fa-trash-can"></i>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+    
+        <section id="modal-container">
+            <div class="modal">
+                <h4>Add Task</h4>
+                <form id="form">
+                    <div class="task-name">
+                        <p>Task Name</p>
+                        <input type="text" id="inputTask">
+                        <h6 id="errorMsg"></h6>
+                    </div>
+                    <div class="task-description" >
+                        <p>Description</p>
+                        <textarea id="taskDes" cols="30" rows="6"></textarea>
+                    </div>
+                    <div class="task-time">
+                        <p>Date</p>
+                        <input type="date" id="inputTime">
+                    </div>
+    
+                    <div class="buttons">
+                        <button type="button" id="closeBtn">Close</button>
+                        <button type="submit" id="addBtn">Add</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </article>
+    
+</body>
+
+<script src="main.js"></script>
+
+</html>

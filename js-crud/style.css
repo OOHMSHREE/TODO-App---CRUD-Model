@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #010407;
+    background-color: #EEEEEE;
+}
+
+.todo-app{
+    width: 350px;
+    height: 500px;
+    padding: 15px;
+    border: 5px solid #19A7CE;
+    background-color: #D9EBFF;
+    overflow: scroll;
+    margin: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-48%,-50%);
+}
+
+#add-todo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 20px;
+    background-color: #19A7CE;
+    padding: 3px 10px;
+    cursor: pointer;
+}
+
+.todo-container{
+    display: grid;
+    gap: 20px;
+}
+
+.todo-container .todo{
+    width: 300px;
+    display: grid;
+    gap: 5px;
+}
+
+.todo{
+    border: 3px solid #19A7CE;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.todo-name{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin: 4px 0px;
+}
+
+.todo-description{
+    font-size: 1rem;
+    overflow-y: hidden;
+    padding-left: 6px;
+}
+
+.todo-date{
+    font-size: .6rem;
+    text-align: right;
+}
+
+.options{
+    text-align: center;
+    margin: 5px 0px;
+    
+}
+
+.options i{
+    cursor: pointer;
+    padding: 4px;
+}
+
+/* styling for modal */
+
+.modal{
+    border: 4px solid #19A7CE;
+    background-color: #D9EBFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-48%,-50%);
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.modal h4{
+    text-align: center;
+}
+form p{
+    margin: 6px;
+}
+input ,textarea{
+    outline: none;
+    border: 1px solid #19a7ce;
+    margin-left: 5px;
+    padding: 4px 10px;
+}
+.buttons{
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    padding: 5px;
+}
+#closeBtn , #addBtn{
+    padding: 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    background-color: #19A7CE;
+}
+
+#closeBtn:hover , #addBtn:hover{
+    color: white;
+}
+
+#modal-container{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* z-index: 1; */
+}
+#errorMsg{
+    color: red;
+}
+
